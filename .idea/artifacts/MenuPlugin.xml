@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="MenuPlugin">
+    <output-path>$PROJECT_DIR$/../../ServerMinecraft/Test/plugins</output-path>
+    <root id="archive" name="MenuPlugin.jar">
+      <element id="module-output" name="MenuPlugin" />
+    </root>
+  </artifact>
+</component>

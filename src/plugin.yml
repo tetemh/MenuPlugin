@@ -2,6 +2,6 @@ name: MenuPlugin
 version: 1.0
 main: fr.tetemh.menuplugin.Main
 commands:
-  menu:
-    description: affiche le menu d un joueur
-    permission: menu.use
+  info:
+    description: affiche les infos d un joueur
+    permission: info.use
