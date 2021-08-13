@@ -1,20 +1,14 @@
 package fr.tetemh.menuplugin.listeners;
 
 import fr.tetemh.menuplugin.Main;
-import fr.tetemh.menuplugin.VirtualGui;
-import fr.tetemh.menuplugin.commands.CommandMenu;
 import fr.tetemh.menuplugin.runnable.TimePlayed;
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.Statistic;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.inventory.Inventory;
-import org.bukkit.inventory.ItemStack;
 
 import java.util.HashMap;
 

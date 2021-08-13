@@ -1,5 +1,6 @@
-package fr.tetemh.menuplugin;
+package fr.tetemh.menuplugin.gui;
 
+import fr.tetemh.menuplugin.Main;
 import fr.tetemh.menuplugin.commands.CommandMenu;
 import fr.tetemh.menuplugin.listeners.MListener;
 import fr.tetemh.menuplugin.utils.ItemBuilder;
@@ -13,7 +14,7 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
-public class VirtualGui implements Listener {
+public class GuiInfoPlayer implements Listener {
 
     private static int coalState;
     private static int ironState;
@@ -24,11 +25,11 @@ public class VirtualGui implements Listener {
     private static int emeraldState;
     private static int quartzState;
     private static int stoneState;
-    private static double timeStateSeconds;
-    private static double timeStateMinutes;
-    private static double timeStatehours;
-    private static double timeStateDays;
-    private static double timeStateMonths;
+    private static int timeStateSeconds;
+    private static int timeStateMinutes;
+    private static int timeStatehours;
+    private static int timeStateDays;
+    private static int timeStateMonths;
     private static double timeState;
 
     private static Inventory inventory;
@@ -110,7 +111,7 @@ public class VirtualGui implements Listener {
         }
 
         if(itemStack.getType() == Material.STAINED_GLASS_PANE && itemStack.getItemMeta().getDisplayName().equals("§aReload")){
-            new VirtualGui().openInventory(player, player.getServer().getPlayer(event.getInventory().getName().substring(12)));
+            new GuiInfoPlayer().openInventory(player, player.getServer().getPlayer(event.getInventory().getName().substring(12)));
         }
     }
 

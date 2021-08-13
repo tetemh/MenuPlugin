@@ -1,12 +1,7 @@
 package fr.tetemh.menuplugin.commands;
 
 import fr.tetemh.menuplugin.Main;
-import fr.tetemh.menuplugin.VirtualGui;
-import fr.tetemh.menuplugin.listeners.MListener;
-import fr.tetemh.menuplugin.utils.ItemBuilder;
-import org.bukkit.Bukkit;
-import org.bukkit.Material;
-import org.bukkit.Statistic;
+import fr.tetemh.menuplugin.gui.GuiInfoPlayer;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -41,7 +36,7 @@ public class CommandMenu implements CommandExecutor {
                 String playerName = args[0];
                 playerTarget = sender.getServer().getPlayer(playerName);
 
-                new VirtualGui().openInventory(player, playerTarget);
+                new GuiInfoPlayer().openInventory(player, playerTarget);
 
             }else {
                 sender.sendMessage("§c/info < Player >");
